@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${PROD_DB_HOST}:${PROD_DB_PORT}/${PROD_DB_NAME}
+    username: ${PROD_DB_USERNAME}
+    password: ${PROD_DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  vaadin:
+    launch-browser: 'true'
+    whitelisted-packages: com.vaadin,org.vaadin,dev.hilla,com.demo.news.agregator.demo
+#    whitelisted-packages: com.vaadin,org.vaadin,com.example.vaadin,org.vaadin,dev.hilla,com.example.application,com.demo.news.agregator.demo
