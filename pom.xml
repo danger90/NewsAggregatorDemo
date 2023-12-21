@@ -17,32 +17,6 @@
 		<java.version>17</java.version>
 		<vaadin.version>24.2.5</vaadin.version>
 	</properties>
-<!--	<repositories>-->
-<!--		&lt;!&ndash; The order of definitions matters. Explicitly defining central here to make sure it has the highest priority. &ndash;&gt;-->
-
-<!--		&lt;!&ndash; Main Maven repository &ndash;&gt;-->
-<!--		<repository>-->
-<!--			<id>central</id>-->
-<!--			<url>https://repo.maven.apache.org/maven2</url>-->
-<!--			<snapshots>-->
-<!--				<enabled>false</enabled>-->
-<!--			</snapshots>-->
-<!--		</repository>-->
-<!--		<repository>-->
-<!--			<id>vaadin-prereleases</id>-->
-<!--			<url>-->
-<!--				https://maven.vaadin.com/vaadin-prereleases/-->
-<!--			</url>-->
-<!--		</repository>-->
-<!--		&lt;!&ndash; Repository used by many Vaadin add-ons &ndash;&gt;-->
-<!--		<repository>-->
-<!--			<id>Vaadin Directory</id>-->
-<!--			<url>https://maven.vaadin.com/vaadin-addons</url>-->
-<!--			<snapshots>-->
-<!--				<enabled>false</enabled>-->
-<!--			</snapshots>-->
-<!--		</repository>-->
-<!--	</repositories>-->
 
 	<repositories>
 		<repository>
@@ -66,22 +40,6 @@
 		</dependencies>
 	</dependencyManagement>
 
-<!--	<pluginRepositories>-->
-<!--		&lt;!&ndash; The order of definitions matters. Explicitly defining central here to make sure it has the highest priority. &ndash;&gt;-->
-<!--		<pluginRepository>-->
-<!--			<id>central</id>-->
-<!--			<url>https://repo.maven.apache.org/maven2</url>-->
-<!--			<snapshots>-->
-<!--				<enabled>false</enabled>-->
-<!--			</snapshots>-->
-<!--		</pluginRepository>-->
-<!--		<pluginRepository>-->
-<!--			<id>vaadin-prereleases</id>-->
-<!--			<url>-->
-<!--				https://maven.vaadin.com/vaadin-prereleases/-->
-<!--			</url>-->
-<!--		</pluginRepository>-->
-<!--	</pluginRepositories>-->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -107,6 +65,7 @@
 		<dependency>
 			<groupId>com.vaadin</groupId>
 			<artifactId>vaadin-spring-boot-starter</artifactId>
+			<version>14.7.6</version>
 		</dependency>
 
 		<dependency>
